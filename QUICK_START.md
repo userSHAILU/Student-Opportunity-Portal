@@ -1,16 +1,13 @@
-# 🚀 Quick Start Guide
-
-## 1️⃣ INSTALL & RUN
-
-### Backend
+1️⃣ INSTALL & RUN
+Backend
 ```bash
 cd backend
 npm install
 npm run dev
-# ✅ Server: http://localhost:5000
+✅ Server: http://localhost:5000
 ```
 
-### Frontend
+Frontend
 ```bash
 cd frontend
 npm install
@@ -19,23 +16,22 @@ npm run dev
 ```
 
 ---
+2️⃣ TEST ACCOUNTS
 
-## 2️⃣ TEST ACCOUNTS
-
-### Student
+Student
 ```
 📧 Email: student@example.com
 🔐 Password: password123
 🎓 Department: CSE
 ```
 
-### T&P Officer
+T&P Officer
 ```
 📧 Email: tp@example.com
 🔐 Password: password123
 ```
 
-### Admin
+Admin
 ```
 📧 Email: admin@example.com
 🔐 Password: password123
@@ -43,30 +39,28 @@ npm run dev
 
 ---
 
-## 3️⃣ MAIN FEATURES TO TEST
+3️⃣ MAIN FEATURES TO TEST
 
-### Student Dashboard
+Student Dashboard
 - ✅ View certificates & skills
 - ✅ Upload new certificate
 - ✅ Browse opportunities with skill matching
 - ✅ Bookmark & like opportunities
 - ✅ Message T&P officers
-
-### T&P Dashboard
+T&P Dashboard
 - ✅ View overall skill distribution
 - ✅ Department-wise analytics
 - ✅ Identify skill gaps
 - ✅ View student messages
 - ✅ Create training programs
 
-### Admin Panel
+Admin Panel
 - ✅ Approve/reject opportunities
 - ✅ Add rejection reasons
 - ✅ Moderate content
 
 ---
-
-## 4️⃣ KEY PAGES
+4️⃣ KEY PAGES
 
 **Student:**
 - `/student/dashboard` - Main dashboard
@@ -87,8 +81,7 @@ npm run dev
 - `/register` - Sign up
 
 ---
-
-## 5️⃣ FILE STRUCTURE
+5️⃣ FILE STRUCTURE
 
 ```
 Campus_opportunities/
@@ -118,17 +111,16 @@ Campus_opportunities/
 ```
 
 ---
+6️⃣ API ENDPOINTS QUICK REF
 
-## 6️⃣ API ENDPOINTS QUICK REF
-
-### Certificates
+---->Certificates
 ```
 POST   /api/certificates              Upload certificate
 GET    /api/certificates/my           Get my certificates
 DELETE /api/certificates/:id          Delete certificate
 ```
 
-### Opportunities
+---->Opportunities
 ```
 GET    /api/opportunities/approved    Get approved opportunities
 POST   /api/opportunities             Create opportunity
@@ -136,43 +128,20 @@ PUT    /api/opportunities/:id/approve Approve (admin)
 PUT    /api/opportunities/:id/reject  Reject (admin)
 ```
 
-### Analytics
+----> Analytics
 ```
 GET    /api/analytics/skills          Overall skills
 GET    /api/analytics/departments     Department insights
 GET    /api/analytics/gaps            Skill gaps
 ```
 
-### Comments
+--->Comments
 ```
 POST   /api/comments                  Create comment
 POST   /api/comments/:id/reply        Reply to comment
 GET    /api/comments                  Get all comments
 ```
-
----
-
-## 7️⃣ COMMON ISSUES & FIXES
-
-### MongoDB Connection Error
-- Ensure MongoDB is running: `mongod`
-- Or use MongoDB Atlas (update `.env`)
-
-### Port Already in Use
-- Backend: Change `PORT` in `backend/.env`
-- Frontend: Change `vite.config.js` port
-
-### CORS Error
-- Ensure backend runs on port 5000
-- Check `vite.config.js` proxy settings
-
-### Module Not Found
-- Run `npm install` in both directories
-- Delete `node_modules` and `package-lock.json`, then reinstall
-
----
-
-## 8️⃣ DEPENDENCIES
+8️⃣ DEPENDENCIES
 
 ### Backend
 - express, mongoose, jsonwebtoken, bcryptjs
@@ -181,35 +150,12 @@ GET    /api/comments                  Get all comments
 ### Frontend
 - react, react-router-dom, axios
 - recharts (charts), lucide-react (icons)
-
----
-
-## 9️⃣ SKILLS INCLUDED
+9️⃣ SKILLS INCLUDED
 
 Web Development, Python, JavaScript, React, Node.js, MongoDB, AI/ML, 
 Data Science, Java, C++, Android, iOS, Cloud, DevOps, UI/UX Design, 
 Graphic Design, Digital Marketing
-
----
-
-## 🔟 DEPARTMENTS
+ 🔟 DEPARTMENTS
 
 CSE, ECE, EEE, Civil, Mechanical
 
----
-
-## 📞 SUPPORT
-
-- Check `README.md` for detailed features
-- Check `SETUP.md` for installation issues
-- Review code comments for clarification
-
----
-
-## ✅ YOU'RE ALL SET!
-
-Everything is ready to go! 🚀
-
-Start the backend & frontend, then explore the application!
-
-**Happy building! 😊**
